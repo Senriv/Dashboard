@@ -2,6 +2,7 @@
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  position: relative;
 }
 
 .header {
@@ -209,6 +210,12 @@
 .customers__table {
   width: 100%;
   margin-bottom: 28px;
+
+  white-space: nowrap;
+}
+
+.customers__table-wrapper {
+  overflow-x: auto;
 }
 
 .customers__table-head td {
@@ -287,4 +294,86 @@
   border: 1px solid #5932ea;
   background-color: #5932ea;
   color: #fff;
+}
+
+.header__burger-button {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.header--open .header__content {
+  display: flex;
+}
+
+.header.header--open {
+  display: flex;
+}
+
+.header--open .header__burger-button {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header__burger-button {
+    display: block;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .header__content,
+  .header {
+    display: none;
+  }
+
+  .main {
+    padding: 50px 20px;
+  }
+
+  .main__greetings {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .customers {
+    padding: 20px;
+  }
+
+  .customers__header {
+    text-align: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .customers__header-name {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
+  .customers__header-text {
+    font-size: 13px;
+    margin-bottom: 7px;
+  }
+
+  .customers__footer {
+    flex-direction: column;
+  }
+
+  .customers__footer-info {
+    margin-bottom: 20px;
+  }
+
+  .MuiPagination-ul > li > button {
+    min-width: 25px;
+  }
 }
