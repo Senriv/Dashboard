@@ -291,6 +291,12 @@
   letter-spacing: -0.12px;
 }
 
+.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-sizeMedium.MuiPaginationItem-text.MuiPaginationItem-circular.Mui-selected.MuiPaginationItem-page.css-1xr9krm {
+  border: 1px solid #5932ea;
+  background-color: #5932ea;
+  color: #fff;
+}
+
 .MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-sizeMedium.MuiPaginationItem-text.MuiPaginationItem-circular.Mui-selected.MuiPaginationItem-page.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root {
   border: 1px solid #5932ea;
   background-color: #5932ea;
